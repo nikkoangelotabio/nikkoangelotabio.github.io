@@ -109,6 +109,18 @@ links.forEach((link)  => {
 
 /*End Of Cursor JS*/
 
+/* Mobile links Active*/
+let mlinks = Array.from(document.querySelectorAll('.navigation-links a'));
+
+function activeLink(){
+  mlinks.forEach((item) =>
+    item.classList.remove('active'));
+    this.classList.add('active');
+}
+  mlinks.forEach((item) =>
+    item.addEventListener('click', activeLink)
+  )
+
 
 
 /* Slider BX Custom */
